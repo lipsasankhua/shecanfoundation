@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>She Can Foundation</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav id="nav">
+  <a href="#home" class="nav-brand">
+    <img src="images/logo.png" alt="She Can Foundation" class="logo" />
+    <span class="brand-name">She Can <em>Foundation</em></span>
+  </a>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#volunteer">Volunteer</a></li>
+  </ul>
+  <a href="#volunteer" class="btn-orange">Join Us →</a>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <span class="eyebrow">● Empowering Women Since 2018</span>
+      <h1>Every Woman<br><em>Can!</em><br>Change the World.</h1>
+      <p>She Can Foundation breaks down barriers and provides women across communities with the resources, education, and support they need to reach their full potential.</p>
+      <div class="actions">
+        <a href="#volunteer" class="btn-orange">Become a Volunteer ✦</a>
+        <a href="#about" class="btn-ghost">Our Story →</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-circle-wrap">
+        <div class="hero-circle-ring">
+          <img src="images/hero-photo.jpg" alt="Empowering women" class="hero-img" />
+        </div>
+        <div class="stat-card" style="top:30px;right:-10px">
+          <strong>12,000+</strong><span>Lives Transformed</span>
+        </div>
+        <div class="stat-card" style="bottom:40px;left:-10px;display:flex;gap:10px;align-items:center">
+          <span style="font-size:1.3rem">🌍</span>
+          <div><strong>38</strong><span>Active Communities</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>Education ✦</span><span>Empowerment ✦</span><span>Leadership ✦</span>
+    <span>Community ✦</span><span>Health ✦</span><span>Together We Rise ✦</span>
+    <span>Education ✦</span><span>Empowerment ✦</span><span>Leadership ✦</span>
+    <span>Community ✦</span><span>Health ✦</span><span>Together We Rise ✦</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <p class="label">Our Story</p>
+    <h2>Born from a <em>vision</em> of a better world</h2>
+    <div class="about-grid">
+      <div class="book">
+        <div class="spine"></div>
+        <div class="face"><p>Our</p><p>Story</p><p class="founder">Reeta Mishra</p></div>
+      </div>
+      <div>
+        <h3>Why <em>She Can</em> Foundation exists</h3>
+        <p>She Can Foundation was founded by individuals who shared a common vision — creating a world where every woman has the opportunity to thrive. We recognised countless barriers preventing women from reaching their potential, and set out to break them down.</p>
+        <p>With shared passion and determination, <strong>She Can Foundation was born.</strong></p>
+        <div class="actions" style="margin-top:24px">
+          <a href="#volunteer" class="btn-orange">Join Us →</a>
+          <a href="#" class="btn-outline">Donate ♡</a>
+        </div>
+      </div>
+    </div>
+    <div class="wave-bar">
+      <div class="wave-track">she can change the world ✦ she can change the world ✦ she can change the world ✦ she can change the world ✦ she can change the world ✦ she can change the world ✦</div>
+    </div>
+  </div>
+</section>
+
+<!-- VOLUNTEER -->
+<section id="volunteer" style="background:var(--dark2)">
+  <div class="section-inner">
+    <p class="label">Get Involved</p>
+    <div class="vol-grid">
+      <div>
+        <h2>Apply to <em>Volunteer</em> With Us</h2>
+        <p style="color:var(--muted);margin:14px 0 22px">Join our growing family of changemakers. Your skills and passion can make a real difference in the lives of women and girls across our communities.</p>
+        <img src="images/volunteer-photo.jpg" alt="Volunteers" class="vol-img" />
+        <div class="contact-box">
+          <p class="label" style="margin-bottom:12px">Contact Us</p>
+          <p>📧 hello@shecanfoundation.org</p>
+          <p>🌐 www.shecanfoundation.org</p>
+          <p>📍 Mumbai, India · Operations Worldwide</p>
+        </div>
+      </div>
+      <div class="form-card">
+        <h3>Volunteer Application</h3>
+        <p style="color:var(--muted);font-size:.85rem;margin-bottom:24px">We'll confirm your application within 48 hours.</p>
+        <div class="success" id="success">✓ Application submitted! We'll be in touch soon.</div>
+        <form id="form">
+          <div class="row">
+            <div class="fg"><label>First Name</label><input id="firstName" placeholder="First name" required /><span class="err" id="e-firstName"></span></div>
+            <div class="fg"><label>Last Name</label><input id="lastName" placeholder="Last name" required /><span class="err" id="e-lastName"></span></div>
+          </div>
+          <div class="row">
+            <div class="fg"><label>Email</label><input type="email" id="email" placeholder="you@example.com" required /><span class="err" id="e-email"></span></div>
+            <div class="fg"><label>Phone</label><input type="tel" id="phone" placeholder="+91 00000 00000" /></div>
+          </div>
+          <div class="fg"><label>Area of Interest</label>
+            <select id="interest" required>
+              <option value="">Choose a program...</option>
+              <option>Education &amp; Scholarships</option>
+              <option>School Facilities Support</option>
+              <option>Economic Empowerment</option>
+              <option>Health &amp; Wellness</option>
+              <option>Leadership Development</option>
+              <option>Community Outreach</option>
+            </select>
+            <span class="err" id="e-interest"></span>
+          </div>
+          <div class="row">
+            <div class="fg"><label>Availability</label>
+              <select id="availability">
+                <option value="">Select...</option>
+                <option>Weekdays</option><option>Weekends</option>
+                <option>Flexible</option><option>Remote Only</option>
+              </select>
+            </div>
+            <div class="fg"><label>City</label><input id="city" placeholder="Mumbai" /></div>
+          </div>
+          <div class="fg"><label>About Yourself</label>
+            <textarea id="message" rows="4" placeholder="Share your motivation, skills, or experience..."></textarea>
+          </div>
+          <button type="submit" id="submitBtn">Submit Application ✦</button>
+          <p style="text-align:center;color:rgba(255,255,255,.25);font-size:.75rem;margin-top:12px">By submitting you agree to our Privacy Policy.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="section-inner">
+    <div class="footer-grid">
+      <div>
+        <img src="images/logo.png" alt="She Can Foundation" class="logo" style="margin-bottom:14px" />
+        <p style="color:var(--muted);font-size:.85rem;max-width:240px;line-height:1.75">Creating a world where every woman has the opportunity to thrive and lead.</p>
+        <div class="socials"><a href="#">𝕏</a><a href="#">f</a><a href="#">◻</a></div>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <a href="#home">Home</a><a href="#about">About</a><a href="#volunteer">Volunteer</a>
+      </div>
+      <div>
+        <h4>Programs</h4>
+        <a href="#">Education</a><a href="#">Health &amp; Wellness</a>
+        <a href="#">Leadership</a><a href="#">Economic Empowerment</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="#">hello@shecanfoundation.org</a>
+        <a href="#">www.shecanfoundation.org</a>
+        <span>Mumbai, India · Worldwide</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 She Can Foundation. All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> · <a href="#">Terms</a> · <a href="admin.html">Admin</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('scroll', () =>
+    document.getElementById('nav').classList.toggle('scrolled', scrollY > 50));
+
+  const form = document.getElementById('form');
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    ['firstName','lastName','email','interest'].forEach(id => {
+      document.getElementById('e-'+id).textContent = '';
+      document.getElementById(id).classList.remove('invalid');
+    });
+
+    const v = id => document.getElementById(id).value.trim();
+    let ok = true;
+    const err = (id, msg) => { document.getElementById('e-'+id).textContent = msg; document.getElementById(id).classList.add('invalid'); ok = false; };
+
+    if (!v('firstName')) err('firstName','Required');
+    if (!v('lastName'))  err('lastName', 'Required');
+    if (!v('email') || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v('email'))) err('email','Valid email required');
+    if (!v('interest'))  err('interest','Please select a program');
+    if (!ok) return;
+
+    const btn = document.getElementById('submitBtn');
+    btn.textContent = 'Submitting...'; btn.disabled = true;
+
+    try {
+      const res = await fetch('http://localhost:3000/api/volunteer', {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ firstName:v('firstName'), lastName:v('lastName'), email:v('email'),
+          phone:v('phone'), interest:v('interest'), availability:v('availability'),
+          city:v('city'), message:v('message') })
+      });
+      if (!res.ok) throw new Error();
+    } catch {}
+
+    form.reset();
+    document.getElementById('success').style.display = 'block';
+    btn.textContent = 'Submit Application ✦'; btn.disabled = false;
+    setTimeout(() => document.getElementById('success').style.display = 'none', 4000);
+  });
+</script>
+</body>
+</html>
