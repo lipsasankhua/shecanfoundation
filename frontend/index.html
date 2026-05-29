@@ -207,7 +207,7 @@
     btn.textContent = 'Submitting...'; btn.disabled = true;
 
     try {
-      const res = await fetch('https://shecan-backend-jt82.onrender.com', {
+      const res = await fetch('https://shecan-backend-jt82.onrender.com/api/volunteer', {
         method:'POST', headers:{'Content-Type':'application/json'},
         body: JSON.stringify({ firstName:v('firstName'), lastName:v('lastName'), email:v('email'),
           phone:v('phone'), interest:v('interest'), availability:v('availability'),
